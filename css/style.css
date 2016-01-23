@@ -1,0 +1,18 @@
+.banner {
+  /*background-image: url("http://smhos.org/wp-content/uploads/2014/10/Silver-Blur-Background-Wallpaper.jpg");*/
+  background-image: url("http://shopthebigcity.com/images/CITYNIGHT.gif");
+  background-size: cover;
+  background-position: center center;
+  min-height: 1em;
+  margin-bottom: -0.5em;
+}
+
+ul.ui-autocomplete {
+  z-index: 1100;
+}
+
+@media screen and (max-width: 480px){
+  .parallax-container {
+    display: none;
+  }
+}

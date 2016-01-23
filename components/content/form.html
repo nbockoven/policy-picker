@@ -1,0 +1,64 @@
+<span name="form-contents">
+  <input type="hidden" name="id">
+
+  <div class="row mb-0">
+    <div class="input-field col s12">
+      <input type="text" name="citizenship" list="list-country" placeholder="Select your country" autofocus required>
+      <label for="citizenship">Citizenship</label>
+    </div><!-- .input-field -->
+  </div><!-- .row -->
+  <div class="row mb-0">
+    <div class="input-field col s12">
+      <input type="text" name="primary_destination" list="list-country" placeholder="Select your destination" required>
+      <label for="primary_destination">Primary Destination</label>
+    </div><!-- .input-field -->
+  </div><!-- .row -->
+
+  <div class="row mb-0 hide">
+    <div class="input-field col s12">
+      <input type="text" name="state_code" list="list-state" placeholder="Select your state" disabled>
+      <label for="state_code">State</label>
+    </div><!-- .input-field -->
+  </div><!-- .row -->
+  <div class="row mb-0">
+    <div class="input-field col s12">
+      <input type="text" name="birth_date" class="datepicker" required>
+      <label for="birth_date">Date of Birth</label>
+    </div><!-- .input-field -->
+  </div><!-- .row -->
+  <div class="row mb-0">
+    <div class="input-field col s12">
+      <input type="text" name="start_travel_date" class="datepicker" required>
+      <label for="start_travel_date">Start Travel Date</label>
+    </div><!-- .input-field -->
+  </div><!-- .row -->
+  <div class="row mb-0">
+    <div class="input-field col s12">
+      <input type="text" name="end_travel_date" class="datepicker" required>
+      <label for="end_travel_date">End Travel Date</label>
+    </div><!-- .input-field -->
+  </div><!-- .row -->
+  <div class="row mb-0">
+    <div class="input-field col s12">
+      <select name="status" required>
+        <option value="" disabled selected>Choose your status</option>
+        <option value="Student">Student</option>
+        <option value="OPT/Scholar">OPT/Scholar</option>
+        <option value="Traveler">Traveler</option>
+      </select>
+      <label for="status">Status</label>
+    </div><!-- .input-field -->
+  </div><!-- .row -->
+  <div class="row mb-0">
+    <div class="input-field col s12">
+      <div class="switch mb-30">
+        <label>
+          Dependent:&nbsp;&nbsp;No
+          <input type="checkbox" name="dependent" value="1">
+          <span class="lever"></span>
+          Yes
+        </label>
+      </div><!-- .switch -->
+    </div><!-- .input-field -->
+  </div><!-- .row -->
+</span>

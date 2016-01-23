@@ -1,0 +1,41 @@
+<div class="card card-content hide">
+  <div class="card-content">
+    <table class="highlight responsive-table" name="table-records">
+      <thead>
+        <tr>
+          <th>Citizenship</th>
+          <th><span class="hide-on-small-only">Primary</span> Destination</th>
+          <th>State</th>
+          <th><span class="hide-on-med-and-up">Birth </span>Date<span class="hide-on-small-only"> of Birth</span></th>
+          <th>Start <span class="hide-on-small-only">Travel</span> Date</th>
+          <th>End <span class="hide-on-small-only">Travel</span> Date</th>
+          <th>Status</th>
+          <th>Dependent</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody><!-- populated by JS --></tbody>
+    </table>
+  </div><!-- .card-content -->
+</div><!-- .card -->
+
+<? include 'modal.html' ?>
+
+<script id="table-row-record" type="text/x-handlebars-template">
+  <tr>
+    <td name="citizenship">{{ citizenship_title }}</td>
+    <td name="primary_destination">{{ primary_destination_title }}</td>
+    <td name="state_code">{{ state_title }}</td>
+    <td name="birth_date">{{ birth_date }}</td>
+    <td name="start_travel_date">{{ start_travel_date }}</td>
+    <td name="end_travel_date">{{ end_travel_date }}</td>
+    <td name="status">{{ status }}</td>
+    <td name="dependent">{{ dependent }}</td>
+    <td>
+      <a href="javascript:void(0)" class="fa fa-pencil fa-fw fa-lg teal-text" onclick="editRecord( this, {{ id }} )"></a>
+      <a href="javascript:void(0)" class="fa fa-trash fa-fw fa-lg red-text" onclick="removeRecord( this, {{ id }} )"></a>
+    </td>
+  </tr>
+</script>
+
+
